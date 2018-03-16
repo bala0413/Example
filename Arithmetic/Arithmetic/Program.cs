@@ -46,6 +46,15 @@ namespace Arithmetic
             c = a / b;
             Console.WriteLine("\nDivision is: " + c);
         }
+        public void ModuloDivision()
+        {
+            Console.WriteLine("Enter the 1st value");
+            a = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Enter the 2nd value");
+            b = Convert.ToInt16(Console.ReadLine());
+            c = a % b;
+            Console.WriteLine("\nModuloDivision is: " + c);
+        }
     }
     class Program
         { 
@@ -57,6 +66,7 @@ namespace Arithmetic
             objAr.Subtraction();
             objAr.Multiplication();
             objAr.Division();
+            objAr.ModuloDivision();
             Console.ReadLine();
         }
     }
